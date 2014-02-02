@@ -1,3 +1,8 @@
+#Trick for importing at separate location in python
+
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..','src'))
+
 from picLib import FileInfoExtractor
 
 f = FileInfoExtractor('test.py')
